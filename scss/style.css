@@ -10985,8 +10985,13 @@ legend ~ div.form-check:first-of-type {
 }
 
 .nav-link {
-  color: white;
+  color: white !important;
   text-shadow: 2px 2px 8px #918989;
+}
+
+.nav-link:hover {
+  color: #0E0000 !important;
+  text-shadow: 2px 2px 8px #3d3d3d;
 }
 
 .banner {
@@ -11026,7 +11031,7 @@ legend ~ div.form-check:first-of-type {
   opacity: 1;
 }
 
-.btn-flat {
+.button-home {
   color: white;
   padding: 12px 24px;
   border-radius: 4px;
@@ -11034,9 +11039,10 @@ legend ~ div.form-check:first-of-type {
   transition: background 0.3s ease;
 }
 
-.btn-flat:hover {
+.button-home:hover {
   background: white;
   color: #E53877;
+  text-decoration: none;
 }
 
 .btn-gradient {

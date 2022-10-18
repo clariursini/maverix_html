@@ -12,7 +12,7 @@
   opacity: 1;
 }
 
-.btn-flat {
+.button-home {
   color: white;
   padding: 12px 24px;
   border-radius: 4px;
@@ -20,9 +20,10 @@
   transition: background 0.3s ease;
 }
 
-.btn-flat:hover {
+.button-home:hover {
   background: white;
   color: #E53877;
+  text-decoration: none;
 }
 
 .btn-gradient {
