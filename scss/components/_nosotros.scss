@@ -1,0 +1,59 @@
+.nosotros {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 100px 0;
+  height: 80vh;
+  margin-top: 10px;
+  display: flex;;
+}
+
+.nosotros .container {
+  align-self: center;
+}
+
+.nosotros h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.nosotros p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.nosotros a {
+  margin-top: 30px;
+}
+
+.numeros {
+  background: black;
+  height: 60vh;
+  padding: 30px 0;
+  margin-top: 10px;
+  display: flex;;
+}
+
+.numeros .container {
+  align-self: center;
+}
+
+.numeros h2 {
+  margin-bottom: 35px;
+}
+
+.numeros h4 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.numeros span {
+  color: $pink;
+}
