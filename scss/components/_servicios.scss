@@ -10,6 +10,7 @@
 .servicios-text {
   display: flex;
   align-items: center;
+  padding-right: 50px;
 }
 
 .servicios h2 {
@@ -21,7 +22,7 @@
 }
 
 .servicios p {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
