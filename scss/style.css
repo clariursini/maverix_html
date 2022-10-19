@@ -11165,6 +11165,7 @@ legend ~ div.form-check:first-of-type {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .servicios a {
@@ -11279,5 +11280,111 @@ legend ~ div.form-check:first-of-type {
   width: 60vw;
   margin: 0 auto;
   margin-bottom: 10px;
+  color: white;
+}
+
+.clientes {
+  align-items: center;
+  background: #E3E3E3;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+}
+
+.clientes h2, .clientes .h2 {
+  margin: 0;
+  color: #0E0000;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.vl {
+  border-right: 3px solid white;
+  height: 100vh;
+  position: fixed;
+  right: 30px;
+}
+
+.back {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: rotate(-90deg);
+  bottom: 30vh;
+  left: -45px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.back a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+
+.back:hover {
+  background-color: rgba(36, 36, 36, 0.4);
+}
+
+.back a:hover {
   color: white;
 }/*# sourceMappingURL=style.css.map */
