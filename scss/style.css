@@ -11153,6 +11153,7 @@ legend ~ div.form-check:first-of-type {
   color: white;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 26px;
 }
 
 .servicios-card {
@@ -11180,6 +11181,7 @@ legend ~ div.form-check:first-of-type {
   width: 35vw;
   justify-items: center;
   margin: 0 auto;
+  padding-top: 27px;
 }
 
 .tablinks {
