@@ -11002,6 +11002,11 @@ legend ~ div.form-check:first-of-type {
   margin-top: 20px;
 }
 
+.banner .container {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
 .banner h1, .banner .h1 {
   margin: 0;
   color: white;
@@ -11070,6 +11075,8 @@ legend ~ div.form-check:first-of-type {
 
 .nosotros .container {
   align-self: center;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .nosotros h1, .nosotros .h1 {
@@ -11102,6 +11109,8 @@ legend ~ div.form-check:first-of-type {
 
 .numeros .container {
   align-self: center;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .numeros h2, .numeros .h2 {
@@ -11366,11 +11375,11 @@ legend ~ div.form-check:first-of-type {
   background-color: rgba(255, 255, 255, 0.3);
   padding-top: 3px;
   padding-bottom: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   transform: rotate(-90deg);
   bottom: 30vh;
-  left: -35px;
+  left: -15px;
   border-radius: 5px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
