@@ -1,0 +1,33 @@
+.tecnologia {
+  padding: 50px 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tecnologia h2 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.tecno-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tecno-item {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0, 0.26);
+  width: 60vw;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: white;
+}
