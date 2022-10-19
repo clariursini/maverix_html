@@ -11370,7 +11370,7 @@ legend ~ div.form-check:first-of-type {
   padding-right: 20px;
   transform: rotate(-90deg);
   bottom: 30vh;
-  left: -45px;
+  left: -35px;
   border-radius: 5px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -11387,4 +11387,41 @@ legend ~ div.form-check:first-of-type {
 
 .back a:hover {
   color: white;
+}
+
+.dots {
+  position: fixed;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  right: 33px;
+}
+
+.dot1 {
+  bottom: 30vh;
+}
+
+.dot2 {
+  bottom: 33vh;
+}
+
+.dot3 {
+  bottom: 36vh;
+}
+
+.dot4 {
+  bottom: 39vh;
+}
+
+.dot5 {
+  bottom: 42vh;
+}
+
+.dot6 {
+  bottom: 45vh;
+}
+
+.dot7 {
+  bottom: 48vh;
 }/*# sourceMappingURL=style.css.map */
