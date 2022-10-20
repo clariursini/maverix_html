@@ -1,0 +1,128 @@
+.servicios {
+  background: gray;
+  padding: 50px 0;
+  height: 100vh;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.servicios-text {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.servicios h2 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.servicios p {
+  font-size: 18px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.servicios h3 {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin-bottom: 26px;
+}
+
+.servicios-card {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  height: 63vh;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.servicios a {
+  margin-top: 30px;
+}
+
+/* Style the tab */
+.tab {
+  /* overflow: hidden; */
+  /* background-color: #f1f1f1; */
+  border-radius: 5px;
+  height: 78vh;
+  display: grid;
+  /* padding: 15px; */
+  width: 35vw;
+  justify-items: center;
+  margin: 0 auto;
+  padding-top: 27px;
+}
+
+.tablinks {
+  height: 130px;
+  width: 186px;
+}
+
+.column-servicios {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: baseline;
+}
+
+.column-servicios span {
+  color: $pink;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.column-servicios p {
+  color: black;
+  font-size: 15px;
+  margin-top: 9px;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.row-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.column-servicios span:hover {
+  color: black;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tab button.active span {
+  color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
