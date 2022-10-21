@@ -1,7 +1,7 @@
 .servicios {
   background: gray;
   padding: 50px 0;
-  height: 100vh;
+  height: 105vh;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 .servicios-text {
   display: flex;
   align-items: center;
-  padding-right: 50px;
+  margin: 0 auto;
 }
 
 .servicios h2 {
@@ -44,10 +44,18 @@
   align-items: center;
   justify-content: center;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 90%;
 }
 
 .servicios a {
   margin-top: 30px;
+}
+
+.container-servicios {
+  width: 83vw;
+  margin: 0 auto;
+  height: 81vh;
+  display: flex;
 }
 
 /* Style the tab */
@@ -61,7 +69,8 @@
   width: 35vw;
   justify-items: center;
   margin: 0 auto;
-  padding-top: 27px;
+  // padding-top: 27px;
+  align-items: center;
 }
 
 .tablinks {
