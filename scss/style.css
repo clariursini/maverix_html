@@ -11133,7 +11133,7 @@ legend ~ div.form-check:first-of-type {
 .servicios {
   background: gray;
   padding: 50px 0;
-  height: 100vh;
+  height: 105vh;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -11142,7 +11142,7 @@ legend ~ div.form-check:first-of-type {
 .servicios-text {
   display: flex;
   align-items: center;
-  padding-right: 50px;
+  margin: 0 auto;
 }
 
 .servicios h2, .servicios .h2 {
@@ -11176,10 +11176,18 @@ legend ~ div.form-check:first-of-type {
   align-items: center;
   justify-content: center;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 90%;
 }
 
 .servicios a {
   margin-top: 30px;
+}
+
+.container-servicios {
+  width: 83vw;
+  margin: 0 auto;
+  height: 81vh;
+  display: flex;
 }
 
 /* Style the tab */
@@ -11193,7 +11201,7 @@ legend ~ div.form-check:first-of-type {
   width: 35vw;
   justify-items: center;
   margin: 0 auto;
-  padding-top: 27px;
+  align-items: center;
 }
 
 .tablinks {
