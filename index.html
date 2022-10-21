@@ -32,25 +32,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
               <li class="nav-item active">
-                <a href="#" class="nav-link">Home</a>
+                <a href="#home" class="nav-link">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Nosotros</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Servicios</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Teconologia</a>
+                <a href="#tecnologia" class="nav-link">Teconologia</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Clientes</a>
+                <a href="#clientes" class="nav-link">Clientes</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Testimonios</a>
+                <a href="#testimonios" class="nav-link">Testimonios</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Contacto</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
               </li>
           </ul>
         </div>
@@ -72,18 +72,20 @@
 
 
     <!-- SECTION HOME/BANNER -->
-    <div class="banner" style="background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(images/fotoBanner.jpg);">
-      <div class="container" data-aos="fade-right">
-        <img src="images/logo_maverixSF.png" alt="">
+    <section id="home">
+      <div class="banner" style="background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(images/fotoBanner.jpg);">
+        <div class="container" data-aos="fade-right">
+          <img src="images/logo_maverixSF.png" alt="">
+        </div>
+        <div class="container" data-aos="fade-right">
+          <a class="btn btn-flat" href="#">CONTACTANOS</a>
+        </div>
       </div>
-      <div class="container" data-aos="fade-right">
-        <a class="btn btn-flat" href="#">CONTACTANOS</a>
-      </div>
-    </div>
+    </section>
     <!-- FIN SECTION HOME/BANNER -->
 
     <!-- SECTION NOSOTROS -->
-    <section class="page-section nosotros">
+    <section class="page-section nosotros" id="nosotros">
       <div class="container">
         <h1 data-aos="zoom-in">MAVERIX: Resultados diferentes</h1>
         <p data-aos="zoom-in">El Estudio se dedica desde hace más de 7 años a la gestión de mora en el marco de los más altos estándares de excelencia.</p>
@@ -147,7 +149,7 @@
     <!-- FIN SECTION NOSOTROS -->
 
     <!-- SECTION SERVICIOS -->
-    <section class="page-section servicios">
+    <section class="page-section servicios" id="servicios">
       <div class="container">
         <div class="text-center" data-aos="fade-down">
           <h2 class="section-heading text-uppercase text-white">NUESTROS SERVICIOS</h2>
@@ -290,7 +292,7 @@
     <!-- FIN SECTION SERVICIOS  -->
 
     <!-- SECTION TECNO -->
-    <section class="page-section tecnologia">
+    <section class="page-section tecnologia" id="tecnologia">
       <div class="container">
         <div class="container">
           <div class="text-center" data-aos="fade-down">
@@ -315,7 +317,7 @@
     <!-- FIN SECTION TECNO  -->
 
     <!-- SECTION CLIENTES -->
-    <section class="clientes">
+    <section class="clientes" id="clientes">
       <div class="container">
         <div class="container">
           <div class="text-center" data-aos="fade-down">
@@ -377,7 +379,7 @@
     <!-- SECTION TESTIMONIOS -->
 
     <!-- Carousel  -->
-    <section class="testimonios">
+    <section class="testimonios" id="testimonios">
 
       <div class="container container-testimonios">
         <div class="container">
@@ -393,171 +395,261 @@
           <div class="swiper-wrapper content">
 
             <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
-              <div class="card testimonial-card">
-                <div class="card-up" style="background: rgba(229, 56, 119, 0.5);"></div>
-                <div class="avatar mx-auto bg-white">
-                  <img src="https://elcomercio.pe/resizer/sfZgRGghypeD5mOULCnrhCfAvPM=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/CZ34PEWVUJFKPJFDIISKGX3YYU.jpg"
-                    class="rounded-circle img-fluid" />
+              <div class="card testimonial-card flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="card-up" style="background: rgba(229, 56, 119, 0.5);"></div>
+                  <div class="avatar mx-auto bg-white">
+                    <img src="https://elcomercio.pe/resizer/sfZgRGghypeD5mOULCnrhCfAvPM=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/CZ34PEWVUJFKPJFDIISKGX3YYU.jpg"
+                      class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body text-center">
+                    <h4 class="mb-2">Leonidas</h4>
+                    <p>Gestor de Cobranzas</p>
+                    <hr />
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
                 </div>
-                <div class="card-body text-center">
-                  <h4 class="mb-2">Leonidas</h4>
-                  <p>Gestor de Cobranzas</p>
-                  <hr />
-                  <p class="dark-grey-text mt-4">
-                    <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
-                    aliquam repellat rem unde ducimus.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
-              <div class="card testimonial-card">
-                <div class="card-up" style="background: rgba(229, 56, 119, 0.7);"></div>
-                <div class="avatar mx-auto bg-white">
-                  <img src="https://4.bp.blogspot.com/-_wgcrc6V874/W29IyxsREwI/AAAAAAAACiM/WBMEyog7NW4ons6THTRm1WqHnJI-VmAlgCLcBGAs/s400/Dilios%2Beyepatch.jpg"
-                    class="rounded-circle img-fluid" />
-                </div>
-                <div class="card-body text-center">
-                  <h4 class="mb-2">Dilios</h4>
-                  <p>Gestor de Cobranzas</p>
-                  <hr />
-                  <p class="dark-grey-text mt-4">
-                    <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima similique aperiam laborum veniam architecto. At?.
-                  </p>
+                <div class="flip-card-back">
+                  <div class="card-body text-center">
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
-              <div class="card testimonial-card">
-                <div class="card-up" style="background: rgba(229, 56, 119, 0.9);"></div>
-                <div class="avatar mx-auto bg-white">
-                  <img src="https://supercurioso.com/wp-content/uploads/2018/06/jerjes-tapa.jpg"
-                    class="rounded-circle img-fluid" />
+              <div class="card testimonial-card flip-card-inner">
+                <div class="div flip-card-front">
+                  <div class="card-up" style="background: rgba(229, 56, 119, 0.7);"></div>
+                  <div class="avatar mx-auto bg-white">
+                    <img src="https://4.bp.blogspot.com/-_wgcrc6V874/W29IyxsREwI/AAAAAAAACiM/WBMEyog7NW4ons6THTRm1WqHnJI-VmAlgCLcBGAs/s400/Dilios%2Beyepatch.jpg"
+                      class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body text-center">
+                    <h4 class="mb-2">Dilios</h4>
+                    <p>Gestor de Cobranzas</p>
+                    <hr />
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima similique aperiam laborum veniam architecto. At?.
+                    </p>
+                  </div>
                 </div>
-                <div class="card-body text-center">
-                  <h4 class="mb-2">Jerjes</h4>
-                  <p>Gestor de Cobranzas</p>
-                  <hr />
-                  <p class="dark-grey-text mt-4">
-                    <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
-                    aliquam repellat rem unde ducimus.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
-              <div class="card testimonial-card">
-                <div class="card-up" style="background: rgba(229, 56, 119, 0.5);"></div>
-                <div class="avatar mx-auto bg-white">
-                  <img src="https://elcomercio.pe/resizer/sfZgRGghypeD5mOULCnrhCfAvPM=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/CZ34PEWVUJFKPJFDIISKGX3YYU.jpg"
-                    class="rounded-circle img-fluid" />
-                </div>
-                <div class="card-body text-center">
-                  <h4 class="mb-2">Leonidas</h4>
-                  <p>Gestor de Cobranzas</p>
-                  <hr />
-                  <p class="dark-grey-text mt-4">
-                    <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
-                    aliquam repellat rem unde ducimus.
-                  </p>
+                <div class="flip-card-back">
+                  <div class="card-body text-center">
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
-              <div class="card testimonial-card">
-                <div class="card-up" style="background: rgba(229, 56, 119, 0.7);"></div>
-                <div class="avatar mx-auto bg-white">
-                  <img src="https://4.bp.blogspot.com/-_wgcrc6V874/W29IyxsREwI/AAAAAAAACiM/WBMEyog7NW4ons6THTRm1WqHnJI-VmAlgCLcBGAs/s400/Dilios%2Beyepatch.jpg"
-                    class="rounded-circle img-fluid" />
+              <div class="card testimonial-card flip-card-inner">
+                <div class="div flip-card-front">
+                  <div class="card-up" style="background: rgba(229, 56, 119, 0.9);"></div>
+                  <div class="avatar mx-auto bg-white">
+                    <img src="https://supercurioso.com/wp-content/uploads/2018/06/jerjes-tapa.jpg"
+                      class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body text-center">
+                    <h4 class="mb-2">Jerjes</h4>
+                    <p>Gestor de Cobranzas</p>
+                    <hr />
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
                 </div>
-                <div class="card-body text-center">
-                  <h4 class="mb-2">Dilios</h4>
-                  <p>Gestor de Cobranzas</p>
-                  <hr />
-                  <p class="dark-grey-text mt-4">
-                    <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
-                    aliquam repellat rem unde ducimus.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
-              <div class="card testimonial-card">
-                <div class="card-up" style="background: rgba(229, 56, 119, 0.9);"></div>
-                <div class="avatar mx-auto bg-white">
-                  <img src="https://supercurioso.com/wp-content/uploads/2018/06/jerjes-tapa.jpg"
-                    class="rounded-circle img-fluid" />
-                </div>
-                <div class="card-body text-center">
-                  <h4 class="mb-2">Jerjes</h4>
-                  <p>Gestor de Cobranzas</p>
-                  <hr />
-                  <p class="dark-grey-text mt-4">
-                    <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
-                    aliquam repellat rem unde ducimus.
-                  </p>
+                <div class="flip-card-back">
+                  <div class="card-body text-center">
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
-              <div class="card testimonial-card">
-                <div class="card-up" style="background: rgba(229, 56, 119, 0.5);"></div>
-                <div class="avatar mx-auto bg-white">
-                  <img src="https://elcomercio.pe/resizer/sfZgRGghypeD5mOULCnrhCfAvPM=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/CZ34PEWVUJFKPJFDIISKGX3YYU.jpg"
-                    class="rounded-circle img-fluid" />
+              <div class="card testimonial-card flip-card-inner">
+                <div class="div flip-card-front">
+                  <div class="card-up" style="background: rgba(229, 56, 119, 0.5);"></div>
+                  <div class="avatar mx-auto bg-white">
+                    <img src="https://elcomercio.pe/resizer/sfZgRGghypeD5mOULCnrhCfAvPM=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/CZ34PEWVUJFKPJFDIISKGX3YYU.jpg"
+                      class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body text-center">
+                    <h4 class="mb-2">Leonidas</h4>
+                    <p>Gestor de Cobranzas</p>
+                    <hr />
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
                 </div>
-                <div class="card-body text-center">
-                  <h4 class="mb-2">Leonidas</h4>
-                  <p>Gestor de Cobranzas</p>
-                  <hr />
-                  <p class="dark-grey-text mt-4">
-                    <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
-                    aliquam repellat rem unde ducimus.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
-              <div class="card testimonial-card">
-                <div class="card-up" style="background: rgba(229, 56, 119, 0.7);"></div>
-                <div class="avatar mx-auto bg-white">
-                  <img src="https://4.bp.blogspot.com/-_wgcrc6V874/W29IyxsREwI/AAAAAAAACiM/WBMEyog7NW4ons6THTRm1WqHnJI-VmAlgCLcBGAs/s400/Dilios%2Beyepatch.jpg"
-                    class="rounded-circle img-fluid" />
-                </div>
-                <div class="card-body text-center">
-                  <h4 class="mb-2">Dilios</h4>
-                  <p>Gestor de Cobranzas</p>
-                  <hr />
-                  <p class="dark-grey-text mt-4">
-                    <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
-                    aliquam repellat rem unde ducimus.
-                  </p>
+                <div class="flip-card-back">
+                  <div class="card-body text-center">
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
-              <div class="card testimonial-card">
-                <div class="card-up" style="background: rgba(229, 56, 119, 0.9);"></div>
-                <div class="avatar mx-auto bg-white">
-                  <img src="https://supercurioso.com/wp-content/uploads/2018/06/jerjes-tapa.jpg"
-                    class="rounded-circle img-fluid" />
+              <div class="card testimonial-card flip-card-inner">
+                <div class="div flip-card-front">
+                  <div class="card-up" style="background: rgba(229, 56, 119, 0.7);"></div>
+                  <div class="avatar mx-auto bg-white">
+                    <img src="https://4.bp.blogspot.com/-_wgcrc6V874/W29IyxsREwI/AAAAAAAACiM/WBMEyog7NW4ons6THTRm1WqHnJI-VmAlgCLcBGAs/s400/Dilios%2Beyepatch.jpg"
+                      class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body text-center">
+                    <h4 class="mb-2">Dilios</h4>
+                    <p>Gestor de Cobranzas</p>
+                    <hr />
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
                 </div>
-                <div class="card-body text-center">
-                  <h4 class="mb-2">Jerjes</h4>
-                  <p>Gestor de Cobranzas</p>
-                  <hr />
-                  <p class="dark-grey-text mt-4">
-                    <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
-                    aliquam repellat rem unde ducimus.
-                  </p>
+                <div class="flip-card-back">
+                  <div class="card-body text-center">
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
+              <div class="card testimonial-card flip-card-inner">
+                <div class="div flip-card-front">
+                  <div class="card-up" style="background: rgba(229, 56, 119, 0.9);"></div>
+                  <div class="avatar mx-auto bg-white">
+                    <img src="https://supercurioso.com/wp-content/uploads/2018/06/jerjes-tapa.jpg"
+                      class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body text-center">
+                    <h4 class="mb-2">Jerjes</h4>
+                    <p>Gestor de Cobranzas</p>
+                    <hr />
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <div class="card-body text-center">
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
+              <div class="card testimonial-card flip-card-inner">
+                <div class="div flip-card-front">
+                  <div class="card-up" style="background: rgba(229, 56, 119, 0.5);"></div>
+                  <div class="avatar mx-auto bg-white">
+                    <img src="https://elcomercio.pe/resizer/sfZgRGghypeD5mOULCnrhCfAvPM=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/CZ34PEWVUJFKPJFDIISKGX3YYU.jpg"
+                      class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body text-center">
+                    <h4 class="mb-2">Leonidas</h4>
+                    <p>Gestor de Cobranzas</p>
+                    <hr />
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <div class="card-body text-center">
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
+              <div class="card testimonial-card flip-card-inner">
+                <div class="div flip-card-front">
+                  <div class="card-up" style="background: rgba(229, 56, 119, 0.7);"></div>
+                  <div class="avatar mx-auto bg-white">
+                    <img src="https://4.bp.blogspot.com/-_wgcrc6V874/W29IyxsREwI/AAAAAAAACiM/WBMEyog7NW4ons6THTRm1WqHnJI-VmAlgCLcBGAs/s400/Dilios%2Beyepatch.jpg"
+                      class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body text-center">
+                    <h4 class="mb-2">Dilios</h4>
+                    <p>Gestor de Cobranzas</p>
+                    <hr />
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <div class="card-body text-center">
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-0 d-flex align-items-stretch swiper-slide">
+              <div class="card testimonial-card flip-card-inner">
+                <div class="div flip-card-front">
+                  <div class="card-up" style="background: rgba(229, 56, 119, 0.9);"></div>
+                  <div class="avatar mx-auto bg-white">
+                    <img src="https://supercurioso.com/wp-content/uploads/2018/06/jerjes-tapa.jpg"
+                      class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body text-center">
+                    <h4 class="mb-2">Jerjes</h4>
+                    <p>Gestor de Cobranzas</p>
+                    <hr />
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <div class="card-body text-center">
+                    <p class="dark-grey-text mt-4">
+                      <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                      aliquam repellat rem unde ducimus.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
