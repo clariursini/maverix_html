@@ -10995,6 +10995,25 @@ legend ~ div.form-check:first-of-type {
   text-shadow: 2px 2px 8px #3d3d3d;
 }
 
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: -47px;
+  width: 100%;
+  background: black;
+  opacity: 1;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
 .banner {
   background-size: cover;
   background-position: center;
