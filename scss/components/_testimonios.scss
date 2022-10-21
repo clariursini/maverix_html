@@ -4,6 +4,7 @@
   border: none;
   margin-left: 15px;
   margin-right: 15px;
+  perspective: 1000px;
 }
 
 .testimonial-card .card-up {
@@ -103,4 +104,37 @@
 .rounded-circle {
   height: 100px;
   width: 100%;
+}
+
+// ------------- FLIP CARDS ------------//
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner:hover {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+  background: rgba(229, 56, 119, 0.9);
+  color: white;
+  border-radius: 0.35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
