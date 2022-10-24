@@ -10975,6 +10975,7 @@ legend ~ div.form-check:first-of-type {
 .navbar-lewagon {
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.15);
+  transition: ease 0.9s;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -10995,18 +10996,16 @@ legend ~ div.form-check:first-of-type {
   text-shadow: 2px 2px 8px #3d3d3d;
 }
 
-/* Page content */
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
+/* scrolling state */
+.navbar.fixed-top {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
+  /* scrolling colors */
   background-color: black;
-  opacity: 1;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .banner {
   background-size: cover;
   background-position: center;
