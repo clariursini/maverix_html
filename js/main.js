@@ -1,22 +1,32 @@
 // ------------------- STICKY NAV BAR -------------------//
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {stickyNavbar()};
+// window.onscroll = function() {stickyNavbar()};
 
 // Get the navbar
-var navbar = document.getElementById("navbar");
+// var navbar = document.getElementById("navbar");
 
 // Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+// var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function stickyNavbar() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+// function stickyNavbar() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+
+document.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  const navbarHeight = 100;
+  const distanceFromTop = Math.abs(
+    document.body.getBoundingClientRect().top
+  );
+  if (distanceFromTop >= navbarHeight) navbar.classList.add("fixed-top");
+  else navbar.classList.remove("fixed-top");
+});
 
 // --------------SERVICIOS--------------- //
 
