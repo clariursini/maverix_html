@@ -1,7 +1,7 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  //padding: 150px 0;
   height: 90vh;
   margin-top: 20px;
 }
@@ -24,4 +24,85 @@
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+// TESTING //
+
+.nubes {
+  overflow: hidden;
+  width: 100%;
+  height: 90vh;
+  background: #0f0f0f;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-maverix {
+  margin: 0 auto;
+  display: flex;
+  //vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  position: absolute;
+  z-index: 12;
+}
+
+.nube1 {
+  top: 230px;
+  left: -50px;
+  width: calc(100vw + 33px);
+  height: 200%;
+  z-index: 2;
+  background-image: url(../../images/nube1SF.png);
+  position: relative;
+  animation: leftRight 2s infinite;
+  animation-direction: alternate;
+}
+
+.nube2 {
+  top: 260px;
+  right: -50px;
+  width: calc(100vw + 33px);
+  height: 200%;
+  z-index: 2;
+  background-image: url(../../images/nube1SF.png);
+  position: relative;
+  animation: rightLeft 2s infinite;
+  animation-direction: alternate;
+}
+
+// .nube1 img {
+//   //width: calc(100vw + 33px);
+//   position: relative;
+//   animation: leftRight 2s infinite;
+//   animation-direction: alternate;
+// }
+
+.nube2 {
+  background-image: url(../../images/nube1SF.png);
+}
+
+@keyframes leftRight {
+  0%   {left: 0px}
+  100%  {left: 50px}
+}
+
+@keyframes rightLeft {
+  0%   {right: 0px}
+  100%  {right: 50px}
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove2 5s infinite;
+}
+
+@keyframes mymove2 {
+  from {top: 0px;}
+  to {top: 200px;}
 }
