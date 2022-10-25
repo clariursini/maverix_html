@@ -3,7 +3,7 @@
 	background: #E3E3E3;
 	display: flex;
   flex-direction: column;
-	height: 40vh;
+	height: 45vh;
 	justify-content: center;
 }
 
@@ -34,11 +34,13 @@ $animationSpeed: 40s;
 .slider {
 	background: white;
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
+	height: 150px;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
-	width: 960px;
+	width: 99%;
+  display: flex;
+  align-items: center;
 
 	&::before,
 	&::after {
