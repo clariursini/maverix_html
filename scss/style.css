@@ -11535,7 +11535,7 @@ legend ~ div.form-check:first-of-type {
 }
 
 .vl {
-  border-right: 3px solid #0E0000;
+  border-right: 3px solid rgba(181, 181, 181, 0.7);
   height: 100vh;
   position: fixed;
   right: 30px;
@@ -11574,7 +11574,7 @@ legend ~ div.form-check:first-of-type {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #0E0000;
+  background-color: rgba(181, 181, 181, 0.7);
   right: 33px;
 }
 
