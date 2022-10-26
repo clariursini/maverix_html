@@ -11032,6 +11032,7 @@ legend ~ div.form-check:first-of-type {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .box img {
@@ -11040,7 +11041,7 @@ legend ~ div.form-check:first-of-type {
 
 .banner p {
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Ubuntu Mono", monospace;
   text-transform: uppercase;
   background: linear-gradient(90deg, #000, #fff, #000);
@@ -11050,8 +11051,16 @@ legend ~ div.form-check:first-of-type {
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
   background-size: 80%;
-  -webkit-animation: shine 4s linear infinite;
-          animation: shine 4s linear infinite;
+}
+
+.p-left {
+  -webkit-animation: shine 5s linear infinite;
+          animation: shine 5s linear infinite;
+}
+
+.p-right {
+  -webkit-animation: shine-right 5s linear infinite;
+          animation: shine-right 5s linear infinite;
 }
 
 @-webkit-keyframes shine {
@@ -11071,10 +11080,26 @@ legend ~ div.form-check:first-of-type {
     background-position-x: 500%;
   }
 }
+@-webkit-keyframes shine-right {
+  0% {
+    background-position-x: 500%;
+  }
+  100% {
+    background-position-x: -500%;
+  }
+}
+@keyframes shine-right {
+  0% {
+    background-position-x: 500%;
+  }
+  100% {
+    background-position-x: -500%;
+  }
+}
 .logo-maverix {
   position: relative;
   height: 100%;
-  width: 100%;
+  width: 19vw;
   margin: 0 auto;
 }
 
@@ -11313,14 +11338,14 @@ legend ~ div.form-check:first-of-type {
 }
 
 .servicios-card {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.44);
   border-radius: 5px;
   height: 63vh;
   padding: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 24px;
   width: 90%;
 }
 
@@ -11443,7 +11468,7 @@ legend ~ div.form-check:first-of-type {
   margin: 0 auto;
   margin-bottom: 10px;
   color: white;
-  box-shadow: rgba(38, 38, 38, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(38, 38, 38, 0.2) 0px 1px 15px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11563,7 +11588,6 @@ legend ~ div.form-check:first-of-type {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 50px;
   background-color: black;
 }
 
@@ -11666,6 +11690,155 @@ legend ~ div.form-check:first-of-type {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  height: 95vh;
+}
+
+.container-contacto {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.left > div {
+  padding: 20px;
+  background-color: #E53877;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.left > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.left > div p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.left > div > div a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.right {
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contacto h2, .contacto .h2 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.contacto > h2, .contacto > .h2 {
+  margin-bottom: 20px;
+}
+
+.contacto h2:after, .contacto .h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #E53877;
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 3s;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area {
+  min-height: 150px;
+}
+
+.btnn {
+  width: 100%;
+  padding: 0.5rem 1 rem;
+  font-size: 1.1rem;
+  background-color: #E53877;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btnn:hover {
+  background-color: black;
+}
+
+.footer {
+  background: #E53877;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: white;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a {
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-logo img {
+  width: 12vw;
 }
 
 .vl {
