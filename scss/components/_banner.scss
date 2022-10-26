@@ -1,26 +1,128 @@
+// TEXTO FLOTANTE
+
 .banner {
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
   height: 90vh;
+  background-color: #BCBCBC;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  margin-top: 2vh;
 }
 
-.banner .container {
-  padding-left: 60px;
-  padding-right: 60px;
+.grid {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 80%;
 }
 
-.banner h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
+.box {
+  //background-color: rgba(255, 255, 255, 0.8);
+  //border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.box img {
+  width: 150%;
+}
+
 
 .banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  //font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  font-family: $body-font;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 4s linear infinite;
+  //position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+// LOGO MAVERIX
+
+.logo-maverix {
+  position:relative;
+  height:100%;
+  width:100%;
+  margin:0 auto;
+}
+
+.logo-maverix img {
+  position:absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes FadeInOut {
+  0% {
+  opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+}
+
+@keyframes FadeOutIn {
+  0% {
+  opacity:0;
+  }
+  45% {
+  opacity:0;
+  }
+  55% {
+  opacity:1;
+  }
+  100% {
+  opacity:1;
+  }
+}
+
+.logo-maverix .bottom {
+  opacity: 0;
+  animation-name: FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  transition: opacity 1s ease-in-out;
+}
+
+.logo-maverix .top {
+  opacity: 1;
+  animation-name: FadeOutIn;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
 }
