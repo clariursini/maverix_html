@@ -28,6 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .box img {
@@ -38,7 +39,7 @@
 .banner p {
   //font-weight: 700;
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   font-family: $body-font;
   text-transform: uppercase;
   background: linear-gradient(90deg, #000, #fff, #000);
@@ -48,8 +49,15 @@
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: shine 4s linear infinite;
   //position: relative;
+}
+
+.p-left {
+  animation: shine 5s linear infinite;
+}
+
+.p-right  {
+  animation: shine-right 5s linear infinite;
 }
 
 @keyframes shine {
@@ -61,12 +69,21 @@
   }
 }
 
+@keyframes shine-right {
+  0% {
+    background-position-x: 500%;
+  }
+  100% {
+    background-position-x: -500%;
+  }
+}
+
 // LOGO MAVERIX
 
 .logo-maverix {
   position:relative;
   height:100%;
-  width:100%;
+  width:19vw;
   margin:0 auto;
 }
 
