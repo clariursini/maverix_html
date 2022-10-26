@@ -11007,30 +11007,166 @@ legend ~ div.form-check:first-of-type {
 }
 
 .banner {
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
   height: 90vh;
+  background-color: #BCBCBC;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  margin-top: 2vh;
 }
 
-.banner .container {
-  padding-left: 60px;
-  padding-right: 60px;
+.grid {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 80%;
 }
 
-.banner h1, .banner .h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  font-size: 32px;
-  font-weight: bold;
+.box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box img {
+  width: 150%;
 }
 
 .banner p {
-  font-size: 20px;
-  color: white;
-  opacity: 0.7;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 40px;
+  font-family: "Ubuntu Mono", monospace;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-animation: shine 4s linear infinite;
+          animation: shine 4s linear infinite;
+}
+
+@-webkit-keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+.logo-maverix {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo-maverix img {
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+
+@-webkit-keyframes FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes FadeOutIn {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes FadeOutIn {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.logo-maverix .bottom {
+  opacity: 0;
+  -webkit-animation-name: FadeInOut;
+          animation-name: FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  transition: opacity 1s ease-in-out;
+}
+
+.logo-maverix .top {
+  opacity: 1;
+  -webkit-animation-name: FadeOutIn;
+          animation-name: FadeOutIn;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .btn-ghost {
@@ -11112,7 +11248,7 @@ legend ~ div.form-check:first-of-type {
 
 .numeros {
   background: black;
-  height: 60vh;
+  height: 65vh;
   padding: 30px 0;
   margin-top: 10px;
   display: flex;
@@ -11277,12 +11413,10 @@ legend ~ div.form-check:first-of-type {
 }
 
 .tecnologia {
-  padding: 50px 0;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .tecnologia h2, .tecnologia .h2 {
@@ -11331,7 +11465,7 @@ legend ~ div.form-check:first-of-type {
   background: #E3E3E3;
   display: flex;
   flex-direction: column;
-  height: 45vh;
+  height: 50vh;
   justify-content: center;
 }
 
