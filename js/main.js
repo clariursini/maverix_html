@@ -72,3 +72,17 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// MOUSE //
+
+$('.mouse').on('click',function(e){
+  e.preventDefault();
+
+
+  var topImg = $('#contacto').offset().top;
+
+  $('html, body').animate({
+      scrollTop: topImg
+  }, 500);
+
+  });

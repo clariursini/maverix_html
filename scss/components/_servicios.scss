@@ -1,9 +1,10 @@
 .servicios {
-  background: gray;
+  background: #F2F2F2;
   padding: 50px 0;
-  height: 105vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .servicios-text {
@@ -14,10 +15,23 @@
 
 .servicios h2 {
   margin: 0;
-  color: white;
+  color: $gray !important;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.servicios h2:after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%);
+  height: 4px;
+  width:50px;
+  border-radius: 2px;
+  background-color: $pink;;
 }
 
 .servicios p {
