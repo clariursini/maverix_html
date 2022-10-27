@@ -1,8 +1,6 @@
 .nosotros {
   background: rgba(255, 255, 255, 0.15);
-  padding: 100px 0;
-  height: 80vh;
-  margin-top: 10px;
+  height: 85vh;
   display: flex;
 }
 
@@ -18,7 +16,8 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+  margin-top: 50px;
 }
 
 .nosotros p {
@@ -26,10 +25,16 @@
   color: #0E0000;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin-bottom: 24px;
 }
 
 .nosotros a {
   margin-top: 30px;
+}
+
+.nosotros a:hover {
+  background: black;
+  color: white;
 }
 
 .numeros {
@@ -60,4 +65,24 @@
 
 .numeros span {
   color: $pink;
+}
+
+// animated line
+
+.line {
+  height: 4px;
+  background: #E53877;
+  margin-bottom: 52px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 2px;
+}
+
+#line_l{
+  animation: line_l_animation 3s infinite;
+}
+
+@keyframes line_l_animation {
+    0%   {left: calc(2% + 50px); width: 0px;}
+    50%   {left: calc(2% + 0px); width: 60%;}
+    100%   {left: calc(2% + 0px); width: 0px;}
 }
