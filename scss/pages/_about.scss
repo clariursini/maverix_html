@@ -13,3 +13,48 @@
 .about .container img {
   margin-bottom: 10vh;
 }
+
+// MOUSE //@at-root
+
+.mouse{
+  width: 150px;
+  height: 65px;
+  position: absolute;
+  bottom: 2em;
+  left: calc(50% - 75px);
+  text-align: center;
+}
+
+.raton {
+  width: 45px;
+  height: 55px;
+  border: solid #4D545C 3px;
+  border-radius: 25px;
+  display: block;
+  margin: 10px auto;
+  position: relative;
+}
+
+.raton:hover{
+	cursor: pointer;
+}
+
+.rueda {
+    background-color: #4D545C;
+    width: 4px;
+    height: 10px;
+    border-radius: 30px;
+    position: absolute;
+    top: 7px;
+    left: 17px;
+    animation-name: mover;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes mover {
+  0% {top: 5px; opacity: 0;}
+  50% {opacity: 1;}
+  100% {top: 15px; opacity: 0;}
+}
