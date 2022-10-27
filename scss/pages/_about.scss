@@ -1,0 +1,15 @@
+.about {
+  height: 100vh;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.about .container img {
+  margin-bottom: 10vh;
+}
