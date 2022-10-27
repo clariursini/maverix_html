@@ -11700,7 +11700,7 @@ legend ~ div.form-check:first-of-type {
   height: 95vh;
 }
 
-.container-contacto {
+.container-contacto{
   padding-left: 40px;
   padding-right: 40px;
   display: grid;
@@ -11708,17 +11708,17 @@ legend ~ div.form-check:first-of-type {
   grid-template-columns: 1fr 1fr;
 }
 
-.left {
+.left{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  text-align: center;
+  text-align: center
 }
 
 .left > div {
   padding: 20px;
-  background-color: #E53877;
+  background-color: $pink;
   width: 400px;
   margin-bottom: 20px;
 }
@@ -11740,37 +11740,37 @@ legend ~ div.form-check:first-of-type {
   text-decoration: none;
 }
 
-.right {
+.right{
   padding: 0px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.contacto h2, .contacto .h2 {
+.contacto h2{
   padding-bottom: 10px;
   margin-bottom: 10px;
   position: relative;
   text-align: center;
 }
 
-.contacto > h2, .contacto > .h2 {
+.contacto > h2{
   margin-bottom: 20px;
 }
 
-.contacto h2:after, .contacto .h2:after {
-  content: "";
+.contacto h2:after{
+  content: '';
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
   height: 4px;
-  width: 50px;
+  width:50px;
   border-radius: 2px;
-  background-color: #E53877;
+  background-color: $pink;;
 }
 
-.field {
+.field{
   width: 100%;
   padding: 0.5rem 1rem;
   outline: none;
@@ -11780,38 +11780,33 @@ legend ~ div.form-check:first-of-type {
   margin-bottom: 22px;
   transition: 3s;
 }
-
-.field:hover {
+.field:hover{
   background-color: rgba(0, 0, 0, 0.1);
 }
-
-.field:focus {
+.field:focus{
   background-color: #fff;
   border: 2px solid rgba(30, 85, 250, 0.47);
 }
-
-.area {
+.area{
   min-height: 150px;
 }
-
-.btnn {
+.btnn{
   width: 100%;
   padding: 0.5rem 1 rem;
   font-size: 1.1rem;
-  background-color: #E53877;
+  background-color: $pink;;
   cursor: pointer;
   outline: none;
   border: none;
   color: #fff;
-  transition: 0.3s;
+  transition: .3s;
 }
-
-.btnn:hover {
+.btnn:hover{
   background-color: black;
 }
 
 .footer {
-  background: #E53877;
+  background: $pink;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11819,12 +11814,10 @@ legend ~ div.form-check:first-of-type {
   padding: 0px 50px;
   color: white;
 }
-
 .footer-links {
   display: flex;
   align-items: center;
 }
-
 .footer-links a {
   color: white;
   opacity: 0.7;
@@ -11832,12 +11825,11 @@ legend ~ div.form-check:first-of-type {
   font-size: 24px;
   padding: 0px 10px;
 }
-
 .footer-links a:hover {
   opacity: 1;
 }
 
-.footer-logo img {
+.footer-logo img{
   width: 12vw;
 }
 
