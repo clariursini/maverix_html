@@ -11012,8 +11012,8 @@ legend ~ div.form-check:first-of-type {
   display: flex;
   align-items: center;
   justify-items: center;
-  margin-left: 8vw;
-  margin-right: 8vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
   margin-top: 2vh;
 }
 
@@ -11911,4 +11911,20 @@ legend ~ div.form-check:first-of-type {
 
 .dot7 {
   bottom: 48vh;
+}
+
+.about {
+  height: 100vh;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.about .container img {
+  margin-bottom: 10vh;
 }/*# sourceMappingURL=style.css.map */
