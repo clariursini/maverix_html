@@ -13,6 +13,19 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   margin-bottom: 40px;
+  position: relative;
+}
+
+.clientes h2:after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%);
+  height: 4px;
+  width:50px;
+  border-radius: 2px;
+  background-color: $pink;;
 }
 
 // CAROUSEL
