@@ -1,6 +1,6 @@
 // Specific CSS for your home-page
 .vl {
-  border-right: 3px solid white;
+  border-right: 3px solid rgba(181, 181, 181, 0.7);
   height: 100vh;
   position: fixed;
   right: 30px;
@@ -8,7 +8,7 @@
 
 .back {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(181, 181, 181, 0.7);
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 30px;
@@ -40,7 +40,7 @@
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: white;
+  background-color: rgba(181, 181, 181, 0.7);
   right: 33px;
 }
 
