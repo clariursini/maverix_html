@@ -23,5 +23,29 @@
 }
 
 .footer-logo img{
-  width: 12vw;
+  width: 20vw;
+}
+
+
+// MEDIA QUERIES - RESPOSIVE //
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 120px;
+  }
+
+  .footer-links {
+    margin-bottom: 10px;
+  }
+
+  .footer-logo img {
+    width: auto !important;
+    height: 5vw !important;
+    margin-bottom: 10px !important;
+  }
 }
