@@ -5,7 +5,7 @@
   background-color: #BCBCBC;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   margin-left: 6vw;
   margin-right: 6vw;
   margin-top: 2vh;
@@ -141,4 +141,43 @@
   animation-iteration-count: infinite;
   animation-duration: 5s;
   animation-direction: alternate;
+}
+
+// MEDIA QUERIES - RESPOSIVE //
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+}
+
+/* Medium devices (landscape tablets, 768px and 992px) */
+@media only screen and (max-width: 992px) {
+  .banner {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    height: 92vh;
+    align-items: flex-start;
+  }
+
+  .box p {
+    font-size: 30px !important;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px !important;
+  }
+
+  .mouse {
+    bottom: 0.5em !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 }
