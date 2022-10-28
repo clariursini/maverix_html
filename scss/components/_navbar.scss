@@ -18,7 +18,7 @@
 }
 
 .nav-link:hover{
-  color: #0E0000;
+  color: rgb(165, 165, 165);
   text-shadow: 2px 2px 8px #3d3d3d;
 }
 
@@ -29,4 +29,24 @@
   width: 100%;
   /* scrolling colors */
   background-color: black;
+}
+
+.navbar-toggler {
+  border-color: white;
+  background: white;
+}
+
+
+// MEDIA QUERIES - RESPOSIVE //
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 }
