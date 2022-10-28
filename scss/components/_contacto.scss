@@ -113,3 +113,39 @@
 .btnn:hover{
   background-color: black;
 }
+
+// MEDIA QUERIES - RESPOSIVE //
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+  .contacto {
+    height: 150vh;
+  }
+
+  .container-contacto{
+    grid-template-columns: 1fr;
+  }
+
+  .right {
+    margin-top: 30px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+  .contacto {
+    height: 160vh;
+  }
+
+  .container-contacto{
+    grid-template-columns: 1fr;
+  }
+
+  .right {
+    margin-top: 30px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
