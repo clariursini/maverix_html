@@ -11409,10 +11409,10 @@ legend ~ div.form-check:first-of-type {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .nosotros {
-    height: 130vh !important;
+    height: 185vh !important;
   }
   .numeros {
-    height: 156vh;
+    height: 200vh;
   }
 }
 .servicios {
@@ -11612,7 +11612,7 @@ legend ~ div.form-check:first-of-type {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .servicios {
-    height: 165vh;
+    height: 220vh;
   }
   .tab {
     display: grid;
@@ -11625,13 +11625,13 @@ legend ~ div.form-check:first-of-type {
     height: auto;
   }
   .container-servicios .text-center {
-    height: 140vh;
+    height: 190vh;
   }
   .row-servicios {
     margin-bottom: 12px;
   }
   .servicios-card {
-    height: 56vh;
+    height: 90vh;
   }
 }
 .tecnologia {
@@ -11700,7 +11700,7 @@ legend ~ div.form-check:first-of-type {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .tecnologia {
-    height: 120vh;
+    height: 180vh;
   }
 }
 .clientes {
@@ -11789,6 +11789,12 @@ legend ~ div.form-check:first-of-type {
   width: 250px;
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+  .clientes {
+    height: 60vh;
+  }
+}
 .testimonial-card {
   border-radius: 0.35rem;
   box-shadow: rgba(255, 255, 255, 0.2) 2px 7px 29px 0px;
@@ -11951,9 +11957,27 @@ legend ~ div.form-check:first-of-type {
 }
 
 .footer-logo img {
-  width: 12vw;
+  width: 20vw;
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 120px;
+  }
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  .footer-logo img {
+    width: auto !important;
+    height: 5vw !important;
+    margin-bottom: 10px !important;
+  }
+}
 .contacto {
   display: flex;
   justify-content: center;
@@ -12082,6 +12106,7 @@ legend ~ div.form-check:first-of-type {
   }
   .container-contacto {
     grid-template-columns: 1fr;
+    justify-content: center;
   }
   .right {
     margin-top: 30px;
@@ -12090,13 +12115,23 @@ legend ~ div.form-check:first-of-type {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
   .contacto {
-    height: 160vh;
+    height: 180vh;
   }
   .container-contacto {
     grid-template-columns: 1fr;
+    justify-content: center;
   }
   .right {
     margin-top: 30px;
+  }
+  .left div {
+    width: 240px;
+  }
+  .left > div > div {
+    width: 100%;
+  }
+  iframe {
+    width: 240px;
   }
 }
 /* Extra small devices (phones, 600px and down) */
@@ -12128,9 +12163,27 @@ legend ~ div.form-check:first-of-type {
 }
 
 .footer-logo img {
-  width: 12vw;
+  width: 20vw;
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 120px;
+  }
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  .footer-logo img {
+    width: auto !important;
+    height: 5vw !important;
+    margin-bottom: 10px !important;
+  }
+}
 .vl {
   border-right: 3px solid rgba(181, 181, 181, 0.7);
   height: 100vh;
