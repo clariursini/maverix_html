@@ -148,3 +148,91 @@
   display: none;
   padding: 6px 12px;
 }
+
+
+// MEDIA QUERIES - RESPOSIVE //
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+  .tabcontent p {
+    font-size: 16px;
+  }
+
+  .tablinks {
+    width: 130px;
+  }
+
+  .servicios-card {
+    padding: 13px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+  .servicios {
+    height: 125vh;
+  }
+
+  .container-servicios {
+    height: 100vh;
+  }
+
+  .container-servicios .text-center {
+    flex-direction: column;
+    padding: 15px;
+    justify-content: center;
+    width: 79vw;
+    height: 100vh;
+  }
+
+  .tablinks {
+    width: 120px;
+  }
+
+  .tab {
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    margin-bottom: 9vh;
+  }
+
+  .servicios-text {
+    justify-content: center;
+  }
+
+  .servicios-card {
+    height: 50vh;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .servicios {
+    height: 165vh;
+  }
+
+  .tab {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  .container-servicios {
+    height: auto;
+  }
+
+  .container-servicios .text-center {
+    height: 140vh;
+  }
+
+  .row-servicios {
+    margin-bottom: 12px;
+  }
+
+  .servicios-card {
+    height: 56vh;
+  }
+}
