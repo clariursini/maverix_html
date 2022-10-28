@@ -124,6 +124,7 @@
 
   .container-contacto{
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   .right {
@@ -134,15 +135,28 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
   .contacto {
-    height: 160vh;
+    height: 180vh;
   }
 
   .container-contacto{
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   .right {
     margin-top: 30px;
+  }
+
+  .left div {
+    width: 240px;
+  }
+
+  .left > div > div {
+    width: 100%;
+  }
+
+  iframe {
+    width: 240px;
   }
 }
 
