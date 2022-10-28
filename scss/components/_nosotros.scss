@@ -6,8 +6,8 @@
 
 .nosotros .container {
   align-self: center;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .nosotros h1 {
@@ -85,4 +85,53 @@
     0%   {left: calc(2% + 50px); width: 0px;}
     50%   {left: calc(2% + 0px); width: 60%;}
     100%   {left: calc(2% + 0px); width: 0px;}
+}
+
+
+// MEDIA QUERIES - RESPOSIVE //
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+  .nosotros {
+    height: 95vh;
+  }
+
+  .nosotros .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .nosotros h1 {
+    margin-top: 20px;
+  }
+
+  .numeros {
+    height: 70vh;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and 992px) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+  .nosotros {
+    height: 117vh !important;
+  }
+
+  .numeros {
+    height: 154vh;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nosotros {
+    height: 130vh !important;
+  }
+
+  .numeros {
+    height: 156vh;
+  }
 }
