@@ -10992,7 +10992,7 @@ legend ~ div.form-check:first-of-type {
 }
 
 .nav-link:hover {
-  color: #0E0000;
+  color: rgb(165, 165, 165);
   text-shadow: 2px 2px 8px #3d3d3d;
 }
 
@@ -11006,6 +11006,14 @@ legend ~ div.form-check:first-of-type {
   background-color: black;
 }
 
+.navbar-toggler {
+  border-color: white;
+  background: white;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Extra small devices (phones, 600px and down) */
 .banner {
   height: 90vh;
   background-color: #BCBCBC;
